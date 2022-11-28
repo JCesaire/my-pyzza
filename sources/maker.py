@@ -39,7 +39,7 @@ class PizzaMaker:
             return False, 'I don\'t know this pizza'
         ingredients = RECIPES[name]['ingredients']
         price = RECIPES[name]['price']
-      
+  
         error = self.__try_to_get_ingredients(ingredients)
         if error is not None:
             return False, error
